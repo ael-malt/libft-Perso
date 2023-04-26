@@ -12,13 +12,19 @@ LIBFT		= ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
 				ft_putendl_fd.c ft_putnbr_fd.c ft_putstr_fd.c ft_split.c \
 				ft_striteri.c ft_strjoin.c ft_strmapi.c ft_strtrim.c ft_substr.c \
 
-PRINTF		= ft_printf.c ft_printf_utils.c ft_printf_utils_1.c
-
-SRCS += $(LIBFT) $(PRINTF)
-
 LIBFT_BONUS	= ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c ft_lstdelone.c \
 				ft_lstmap.c ft_lstiter.c ft_lstnew.c ft_lstlast.c ft_lstsize.c ft_lstdelone.c
-SRCS_BONUS	+= $(LIBFT_BONUS)
+
+PRINTF		= ft_printf.c ft_printf_utils.c ft_printf_utils_1.c
+
+GNL			= get_next_line.c get_next_line_utils.c
+
+GNL_BONUS	= get_next_line_bonus.c get_next_line_utils_bonus.c
+
+SRCS += $(LIBFT) $(PRINTF) $(GNL)
+
+
+SRCS_BONUS	+= $(LIBFT_BONUS) $(GNL_BONUS)
 
 vpath %.c $(PATH_SRCS)
 

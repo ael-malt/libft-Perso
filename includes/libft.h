@@ -6,7 +6,7 @@
 /*   By: ael-malt <ael-malt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 13:07:23 by ael-malt          #+#    #+#             */
-/*   Updated: 2023/04/22 16:26:39 by ael-malt         ###   ########.fr       */
+/*   Updated: 2023/04/26 13:14:08 by ael-malt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,10 @@
 # include <ctype.h>
 # include <stdlib.h>
 # include <stdint.h>
+
 # include "ft_printf.h"
+# include "get_next_line.h"
+# include "get_next_line_bonus.h"
 
 // Mandatory Part 1
 int		ft_atoi(const char	*nptr);
