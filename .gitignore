@@ -2,3 +2,6 @@
 libft.a
 objs
 .vscode
+a.out
+main.c
+test

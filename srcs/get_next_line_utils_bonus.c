@@ -6,12 +6,11 @@
 /*   By: ael-malt <ael-malt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 13:30:30 by ael-malt          #+#    #+#             */
-/*   Updated: 2023/04/26 13:19:18 by ael-malt         ###   ########.fr       */
+/*   Updated: 2023/04/26 13:22:12 by ael-malt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/get_next_line_bonus.h"
-
 
 size_t	ft_strlen(const char *s)
 {

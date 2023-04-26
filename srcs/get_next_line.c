@@ -6,7 +6,7 @@
 /*   By: ael-malt <ael-malt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 13:27:19 by ael-malt          #+#    #+#             */
-/*   Updated: 2023/04/26 13:19:15 by ael-malt         ###   ########.fr       */
+/*   Updated: 2023/04/26 13:49:58 by ael-malt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,16 +57,16 @@ char	*get_next_line(int fd)
 
 // int	main(void)
 // {
-// 	int		test;
+// 	int		fd;
 // 	char	*line;
 
-// 	test = open("test", O_RDONLY | O_CREAT);
-// 	line = (get_next_line(test));
-// 	printf("%s", line);
+// 	fd = open("test", O_RDONLY | O_CREAT);
+// 	line = (get_next_line(fd));	
+// 	// printf("%s", line);
 // 	while (line != 0)
 // 	{
-// 		line = (get_next_line(test));
 // 		printf("%s", line);
 // 		free(line);
+// 		line = (get_next_line(fd));
 // 	}
 // }
