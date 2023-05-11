@@ -21,10 +21,7 @@ GNL			= get_next_line.c get_next_line_utils.c
 
 GNL_BONUS	= get_next_line_bonus.c get_next_line_utils_bonus.c
 
-SRCS += $(LIBFT) $(PRINTF) $(GNL)
-
-
-SRCS_BONUS	+= $(LIBFT_BONUS) $(GNL_BONUS)
+SRCS += $(LIBFT) $(LIBFT_BONUS) $(PRINTF) $(GNL) $(GNL_BONUS)
 
 vpath %.c $(PATH_SRCS)
 
@@ -40,8 +37,6 @@ vpath %.h $(PATH_HEADER)
 
 PATH_OBJS	= objs/
 OBJS		= $(patsubst %.c, $(PATH_OBJS)/%.o, $(SRCS))
-
-OBJS_BONUS = $(patsubst %.c, $(PATH_OBJS)/%.o, $(SRCS_BONUS))
 
 ### COMPILATION
 
@@ -59,9 +54,6 @@ $(NAME):	$(OBJS)
 $(OBJS):	$(PATH_OBJS)/%.o: %.c
 			mkdir -p $(PATH_OBJS)
 			$(CC) $(CFLAGS) -c $< -o $@ $(INCLUDES)
-			
-bonus:		$(OBJS) $(OBJS_BONUS)
-			$(AR) $(NAME) $(OBJS) $(OBJS_BONUS)
 
 clean:
 			$(RM) -r $(PATH_OBJS)
