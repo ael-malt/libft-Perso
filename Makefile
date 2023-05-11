@@ -2,7 +2,7 @@ NAME		= libft.a
 
 ### SRCS
 
-PATH_SRCS	= srcs/
+PATH_SRCS	= src/
 
 LIBFT		= ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
 				ft_isascii.c ft_isdigit.c ft_isprint.c ft_memchr.c ft_memcmp.c \
@@ -13,7 +13,7 @@ LIBFT		= ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
 				ft_striteri.c ft_strjoin.c ft_strmapi.c ft_strtrim.c ft_substr.c \
 
 LIBFT_BONUS	= ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c ft_lstdelone.c \
-				ft_lstmap.c ft_lstiter.c ft_lstnew.c ft_lstlast.c ft_lstsize.c ft_lstdelone.c
+				ft_lstmap.c ft_lstiter.c ft_lstnew.c ft_lstlast.c ft_lstsize.c
 
 PRINTF		= ft_printf.c ft_printf_utils.c ft_printf_utils_1.c
 
@@ -27,7 +27,7 @@ vpath %.c $(PATH_SRCS)
 
 ### HEADER
 
-INCLUDES	= -Iincludes/
+INCLUDES	= -Iinclude/
 
 HEADER		+= libft.h
 
